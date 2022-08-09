@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var presented: Bool = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            NavigationLink("Demo", isActive: $presented) {
+                ZendeskContainer(isPresented: $presented)
+            }
+        }
     }
 }
 
