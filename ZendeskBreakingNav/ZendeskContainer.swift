@@ -18,10 +18,12 @@ struct ZendeskContainer: View {
             Button("Back") {
                 isPresented = false
             }.padding(.top, 20)
+                .foregroundColor(.red)
             MessagingView()
-                .edgesIgnoringSafeArea([.bottom, .top])
-        }.ignoresSafeArea(.container, edges: .top)
-            .navigationBarHidden(true)
+//                .edgesIgnoringSafeArea([.bottom, .top])
+        }
+//        .ignoresSafeArea(.container, edges: .top)
+//            .navigationBarHidden(true)
         
     }
 }
